@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Cooperative Minesweeper</title>
+    <script defer src="index.js?v=20240526" > </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="cursorFollower"></div>
+    <div class="mainFlexGroup">
+        <div id="decor">
+            <p id="title">Multiplayer Minesweeper</p>
+        </div>
+        <div id="ui">
+            <div id="Username" class="inputer">
+                <input id="username" type="text" placeholder="Username" minlength="4" maxlength="36">
+            </div>
+            <div id="JoinSection" class="inputer">
+                <input id="GameId1" type="text" placeholder="Game Id" minlength="10" maxlength="10">
+                <button id="Join">Join Game</button>
+            </div>
+            <div id="GameViewer" class="inputer">
+                <div class="flexgroup">
+                    <label for="input" id="explanation">see a game that has already been played</label>
+                    <input id="GameId2" type="text" placeholder="Game Id" minlength="10" maxlength="10">
+                </div>
+                <button>view game</button>
+
+            </div>
+            <div id="RoomCreator" class="inputer">
+                <button id ="CreateGame">Create Room</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cooperative Minesweeper</title>
+    <link rel="stylesheet" href="./playscreen.css">
+    <script defer src="./playscreen.js?v=20240526"></script>
+    <script defer src="./playscreen.canvas.js?v=20240611"></script>
+    <audio loop autoplay id="bgMusic">
+        <source src="assets/sounds/backgroundMusic.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <menu id="ctxMenu">
+        <menu title="Alarm" id="Alarm"></menu>
+        <menu title="Unknown" id="Unknown"></menu>
+        <menu title="Clear" id="Clear"></menu>
+    </menu>
+</head>
+
+<body>
+    <button id="musicButton" background="transparent"><img id="musicImage" src="assets/notMute.png"
+            background="transparent"></button>
+            
+    <div id="Chat">
+        <ul id = "messages"></ul>
+        <input id="textChat" type="text" resize="false">
+    </div>
+
+    <canvas id="Canvas"></canvas>
+        
+    <p id="RoomId"></p>
+</body>
+
+</html>

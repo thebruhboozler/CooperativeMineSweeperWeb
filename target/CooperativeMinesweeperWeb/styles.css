@@ -1,0 +1,154 @@
+body{
+    position: absolute;
+    background: linear-gradient(to bottom ,lightgray,darkgray);
+    font-family: 'Pixelify Sans';
+    background-attachment: fixed;
+}
+
+
+#cursorFollower{
+    position: absolute;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    background: url("assets/welcomeBackground.gif");
+    -webkit-mask-image: -webkit-radial-gradient(circle closest-side, rgba(0,0,0,1), rgba(0,0,0,0));
+    object-fit: contain;
+    transform: translate(-50%,-50%);
+}
+
+.mainFlexGroup{
+    display:flex;
+    flex-direction: column;
+}
+
+#ui{
+    display: block;
+    font-family: 'Pixelify Sans';
+    position: fixed;
+    width: auto;
+    background-color: lightgray;
+    height: auto;
+    margin: auto;
+    top:11%;
+    left:10%;
+    box-shadow: -10px -10px black;
+    padding: 10px;
+    border-radius: 0;
+    border-top: 10px darkgray solid;
+    border-left: 10px darkgray solid;   
+    border-bottom: 10px white solid;
+    border-right: 10px white solid;
+    z-index: 4;
+}
+
+.inputer{
+    display: flex;
+    position: relative;
+    left:2%;
+    top:2%;
+    font-family: 'Pixelify Sans';
+    width: auto;
+    margin:5%;
+    border-top: 10px darkgray solid;
+    border-left: 10px darkgray solid;   
+    border-bottom: 10px white solid;
+    border-right: 10px white solid;   
+    box-shadow: -10px -10px black;
+    padding: 10px;
+    border-radius: 0;
+    z-index: 5;
+}
+
+.inputer >button{
+    font-family: 'Pixelify Sans';
+    border-top: 10px darkgray solid;
+    border-left: 10px darkgray solid;   
+    border-bottom: 10px white solid;
+    border-right: 10px white solid;   
+    box-shadow: -10px -10px black;
+    margin:5%;
+    height: 30%;
+    width: auto;
+    font-size: x-large;
+}
+
+.inputer >button:hover{
+    background-color: darkgray;
+}
+
+.inputer > button:active{
+    background-color: darkgray;
+    border: 10px darkgray solid;
+    box-shadow: none;
+}
+
+
+.flexgroup{
+    display:flex;
+    flex-direction:column;
+}
+
+
+.inputer > label{
+    float: top;
+    font-size: 4pt;
+    width: 50%;
+    text-wrap: wrap;
+}
+
+#username{
+    width: 70%;
+}
+
+.inputer > input{
+    display:flex;
+    flex-direction:column;
+    font-family:'Pixelify Sans';
+    border-radius: 0;
+    height: auto;
+    width:80%;
+    font-size: 35pt;
+    padding: 5px;
+    text-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+#explanation{
+    font-size: 14pt;
+}
+
+#GameId2{
+    height: 80%;
+    width: 100%;
+    font-family: 'Pixelify Sans';
+    font-size: 30pt;
+    padding: 5px;
+    text-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+#RoomCreator > button{
+    margin: auto;
+    height: 50%;
+    width: 50%;
+}
+
+
+#decor > p{
+    font-size: 5vw;
+    font-family: inherit;
+    position: fixed;
+    text-wrap: wrap;
+    top:-5%;
+    left: 50%;
+    width: 30%;
+    right: 80%;
+    padding: 5%;
+    margin: 5%;
+    z-index: 10;
+    color: white;
+    text-shadow: -4px -4px black;
+}
+
+
